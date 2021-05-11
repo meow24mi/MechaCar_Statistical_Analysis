@@ -3,19 +3,21 @@ Utilizing R and RStudio to provide AutosRUs' insights for the manufacturing team
 
 ## Linear Regression to Predict MPG
 
-As demonstrated in image below: the only variable is vehicle weight that produces non-random amount of variance to the mpg values. With a p-value of 0.0012, vehicle weight positively correlates to miles per gallon. 
+As demonstrated in image below, the only variable is vehicle weight that produces non-random amount of variance to the mpg values. With a p-value of 0.0012, vehicle weight positively correlates to miles per gallon. 
 ![R Square](p-values(coefficients).png)
-The slope of the linear regression is near zero for all variables aside from vehicle weight because the is no significant relationship between them. For the vehicle weight, the slope is not zero because the weight of the vehicle affects the mpg. 
+The slope of the linear regression is near zero for all variables because the is no significant relationship between them. For the vehicle weight, the slope is not zero because the weight of the vehicle affects the mpg. 
 
 Of all the data collected, only one out of the six variable is proven to affect mpg for the prototypes; the more variables that affect mpg will make this linear model stronger. Additional data should be collected to predict mpg more effectively. 
 
 ## Summary Statistics on Suspension Coils
 
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils muts not exceed 100 pounds per square inch. As seen in the Total Summary, the overall variance meets the requirement. The variance for the combination of all three lots is 62 pounds per square inch, which is less than 100. 
 ![Total Summary](total_summary.png)
+However, upon closer inspection in the Lot Summary, only Lot1 and Lot2 meet these requirements. Lot1 and Lot 2 each had very little variance that is relatively low, at 0.9 for Lot1 and 7.5 for Lot 2. Lot3 variance is 170, which is greater than 100 pounds per square inch. 
 ![Lot Summary](lot_summary.png)
 
 ## T-Tests on Suspension Coils
-Lot 1 has a t value of 0, p-value of 1; Lot 2 has a t value of 0.5, and p-value of 0.6 and Lot 3 has a t-value of -2.1, and p-value of 0.04. Lot three is the only lot that did not happen by chance with the probability of it happening by chance less than 4% of the time.  
+In the image below, it shows that Lot 1 has a t value of 0, p-value of 1; Lot 2 has a t value of 0.5, and p-value of 0.6 and Lot 3 has a t-value of -2.1, and p-value of 0.04. Lot three is the only lot that did not happen by chance with the probability of it happening by chance less than 4% of the time. 
 ![T Test](t-test.png)
 
 ## Study Design: MechaCar vs Competition
